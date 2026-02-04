@@ -89,7 +89,7 @@ export default function Header() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-700"
+            className="md:hidden text-gray-700 hover:text-teal-600 transition-colors"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -100,50 +100,88 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden pb-4">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setIsMenuOpen(false)}
-                className={`block py-2 px-4 transition-colors ${
-                  isActive(item.path)
-                    ? "text-teal-600 font-semibold bg-teal-50"
-                    : "text-gray-700 hover:bg-gray-50"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
+        {/* Mobile Menu - Slide from Right */}
+{/* Mobile Menu */}
+{isMenuOpen && (
+  <>
+    {/* Overlay */}
+    <div
+      className="fixed inset-0 bg-black/40 z-40 md:hidden"
+      onClick={() => setIsMenuOpen(false)}
+    />
 
-            <div className="flex items-center gap-3 px-4 pt-3">
-              <Link
-                to="/contact"
-                onClick={() => setIsMenuOpen(false)}
-                className="flex-1 text-center bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
-              >
-                Book Now
-              </Link>
+    {/* Slide Drawer */}
+    <div
+      className={`fixed top-0 left-0 h-full w-80 max-w-[85%] bg-white dark:bg-gray-900 shadow-2xl z-50 md:hidden transform transition-transform duration-300 ${
+        isMenuOpen ? "translate-x-0" : "-translate-x-full"
+      }`}
+    >
+      {/* Header */}
+      <div className="flex items-center justify-between px-6 py-4 border-b dark:border-gray-700">
+        <div className="flex items-center space-x-2">
+          <Sparkles className="w-6 h-6 text-teal-600" />
+          <span className="font-bold text-gray-900 dark:text-white">
+            Menu
+          </span>
+        </div>
 
-              <button
-                onClick={() => {
-                  toggleTheme();
-                  setIsMenuOpen(false);
-                }}
-                aria-label="Toggle theme"
-                className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 transition-colors"
-              >
-                {theme === "dark" ? (
-                  <Sun className="w-5 h-5 text-yellow-400" />
-                ) : (
-                  <Moon className="w-5 h-5 text-gray-700" />
-                )}
-              </button>
-            </div>
-          </div>
-        )}
+        <button onClick={() => setIsMenuOpen(false)}>
+          <X className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+        </button>
+      </div>
+
+      {/* Navigation */}
+      <div className="px-6 py-4 space-y-2 overflow-y-auto h-[calc(100%-140px)]">
+        {navItems.map((item) => (
+          <Link
+            key={item.path}
+            to={item.path}
+            onClick={() => setIsMenuOpen(false)}
+            className={`block py-3 px-4 rounded-lg transition ${
+              isActive(item.path)
+                ? "bg-teal-50 text-teal-600 font-semibold"
+                : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+            }`}
+          >
+            {item.name}
+          </Link>
+        ))}
+      </div>
+
+      {/* Bottom Actions */}
+      <div className="absolute bottom-0 left-0 w-full px-6 py-4 border-t dark:border-gray-700 space-y-3">
+        <Link
+          to="/contact"
+          onClick={() => setIsMenuOpen(false)}
+          className="block text-center bg-teal-600 text-white px-6 py-3 rounded-full hover:bg-teal-700 font-semibold"
+        >
+          Book Now
+        </Link>
+
+        <button
+          onClick={() => {
+            toggleTheme();
+            setIsMenuOpen(false);
+          }}
+          className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 font-medium"
+        >
+          {theme === "dark" ? (
+            <>
+              <Sun className="w-5 h-5 text-yellow-400" />
+              Light Mode
+            </>
+          ) : (
+            <>
+              <Moon className="w-5 h-5" />
+              Dark Mode
+            </>
+          )}
+        </button>
+      </div>
+    </div>
+  </>
+)}
+
       </nav>
     </header>
   );
