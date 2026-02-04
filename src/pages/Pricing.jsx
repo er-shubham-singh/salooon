@@ -92,10 +92,10 @@ export default function Pricing() {
       {/* Header */}
       <section className="bg-gradient-to-br from-teal-50 to-amber-50 py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-black">
             Pricing
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto ">
             Transparent pricing for all our services.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function Pricing() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
+            <h2 className="text-3xl text-black md:text-4xl font-serif font-bold mb-4">
               Popular Packages
             </h2>
           </div>
@@ -166,7 +166,7 @@ export default function Pricing() {
                 key={index}
                 className="bg-gradient-to-br from-gray-50 to-teal-50 rounded-xl p-8"
               >
-                <h3 className="text-2xl font-serif font-bold mb-6">
+                <h3 className="text-2xl font-serif text-black font-bold mb-6">
                   {category.category}
                 </h3>
 
@@ -174,10 +174,10 @@ export default function Pricing() {
                   {category.services.map((service, i) => (
                     <li
                       key={i}
-                      className="flex justify-between border-b pb-3"
+                      className="flex  text-black justify-between border-b pb-3"
                     >
                       <span>{service.name}</span>
-                      <span className="text-teal-600 font-semibold">
+                      <span className="text-teal-600 text-black font-semibold">
                         {service.price}
                       </span>
                     </li>
