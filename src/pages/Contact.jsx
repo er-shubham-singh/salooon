@@ -68,7 +68,7 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-50 to-amber-50 py-20">
+      <section className="bg-gradient-to-br text-black from-teal-50 to-amber-50 py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
             Contact Us
@@ -80,7 +80,7 @@ export default function Contact() {
       </section>
 
       {/* Form Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white text-black">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-serif font-bold mb-8">

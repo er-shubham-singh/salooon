@@ -150,7 +150,7 @@ export default function Pricing() {
                   className={`block text-center py-3 rounded-full font-semibold ${
                     pkg.popular
                       ? "bg-teal-600 text-white hover:bg-teal-700"
-                      : "bg-gray-100 hover:bg-gray-200"
+                      : "bg-gray-200 hover:bg-gray-400 text-black"
                   }`}
                 >
                   Book Now

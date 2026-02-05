@@ -105,11 +105,11 @@ export default function Services() {
                 <div className="flex flex-col md:flex-row gap-8">
                   {/* Left */}
                   <div className="md:w-1/3">
-                    <div className="bg-teal-600 w-20 h-20 rounded-full flex items-center justify-center mb-6">
+                    <div className="text-black bg-teal-600 w-20 h-20 rounded-full flex items-center justify-center mb-6">
                       <service.icon className="w-10 h-10 text-white" />
                     </div>
 
-                    <h2 className="text-3xl font-serif font-bold mb-4">
+                    <h2 className="text-3xl text-black font-serif font-bold mb-4">
                       {service.title}
                     </h2>
 
@@ -145,7 +145,7 @@ export default function Services() {
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-teal-50 to-amber-50 text-center">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-black">
           Ready to Book Your Service?
         </h2>
 
