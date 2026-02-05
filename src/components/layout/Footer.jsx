@@ -143,7 +143,7 @@ Vadodara, Gujarat, 390007
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
           <p>
-            © {new Date().getFullYear()} Alisha Beauty Parlor. All rights
+            © {new Date().getFullYear()} Naileditt saloon/Beauty Parlor. All rights
             reserved.
           </p>
         </div>
