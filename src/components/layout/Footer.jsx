@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <Sparkles className="w-6 h-6 text-teal-400" />
               <span className="text-xl font-serif font-bold text-white">
-                Alisha Beauty Parlor
+                 Naileditt Saloon/Beauty Parlor
               </span>
             </div>
 
@@ -77,18 +77,20 @@ export default function Footer() {
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-1 text-teal-400" />
                 <span>
-                  123 Beauty Street, Fashion District, City 12345
+                  GF-002, YOGI DARSAN APARTMENT, 13-A NUTAN <br />
+BHARAT CO OP SOCIETY, ALKAPURI, VADODARA, <br />
+Vadodara, Gujarat, 390007 
                 </span>
               </li>
 
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-teal-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9404091818</span>
               </li>
 
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-teal-400" />
-                <span>info@alishabeauty.com</span>
+                <span>dimple.nailedit@gmail.com</span>
               </li>
             </ul>
           </div>
