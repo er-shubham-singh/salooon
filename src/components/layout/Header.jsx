@@ -46,7 +46,7 @@ export default function Header() {
           <Link to="/" className="flex items-center space-x-2">
             <Sparkles className="w-8 h-8 text-teal-600" />
             <span className="text-2xl font-serif font-bold text-gray-900">
-              Alisha Beauty Parlor
+              Naileditt Saloon/ Beauty Parlor
             </span>
           </Link>
 
