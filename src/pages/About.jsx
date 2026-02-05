@@ -31,7 +31,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-              About Alisha Beauty Parlor
+              About Naileditt Beauty Parlor
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Where beauty meets expertise and every client leaves feeling confident and radiant.
@@ -51,13 +51,13 @@ export default function About() {
 
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Founded in 2010, Alisha Beauty Parlor has been the trusted
+                  Founded in 2010, Naileditt Beauty Parlor has been the trusted
                   destination for beauty enthusiasts seeking premium services
                   and personalized care.
                 </p>
 
                 <p>
-                  Our founder, Alisha, envisioned a space where every woman
+                  Our founder, Naileditt, envisioned a space where every woman
                   could feel pampered, beautiful, and confident.
                 </p>
 

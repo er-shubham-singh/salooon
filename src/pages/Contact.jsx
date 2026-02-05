@@ -185,7 +185,7 @@ export default function Contact() {
               <Phone /> +1 555 123456
             </div>
             <div className="flex items-center gap-3">
-              <Mail /> info@alishabeauty.com
+              <Mail /> info@Nailedittbeauty.com
             </div>
             <div className="flex items-center gap-3">
               <Clock /> 9 AM – 8 PM

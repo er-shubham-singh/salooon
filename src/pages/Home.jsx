@@ -33,7 +33,7 @@ export default function Home() {
     {
       name: "Sarah Johnson",
       text:
-        "Alisha Beauty Parlor transformed my look for my wedding day. The bridal package was absolutely worth it!",
+        "Naileditt Beauty Parlor transformed my look for my wedding day. The bridal package was absolutely worth it!",
       rating: 5,
     },
     {
@@ -61,7 +61,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Welcome to Alisha Beauty Parlor, where elegance meets expertise.
+              Welcome to Naileditt Beauty Parlor, where elegance meets expertise.
               We offer premium beauty services tailored to enhance your natural radiance.
             </p>
 
